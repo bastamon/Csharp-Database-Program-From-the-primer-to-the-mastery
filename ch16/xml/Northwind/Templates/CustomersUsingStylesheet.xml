@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<Northwind xmlns:sql="urn:schemas-microsoft-com:xml-sql" sql:xsl="CustomersStylesheet.xsl">
+  <sql:query>
+    SELECT TOP 2 CustomerID, CompanyName, PostalCode, Country, Phone
+    FROM Customers
+    ORDER BY CustomerID
+    FOR XML AUTO, ELEMENTS
+  </sql:query>
+</Northwind>

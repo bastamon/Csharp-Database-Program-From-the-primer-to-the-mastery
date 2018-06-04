@@ -1,0 +1,5 @@
+USE Northwind
+SELECT TOP 2 EmployeeID, Photo
+FROM Employees
+ORDER BY EmployeeID
+FOR XML AUTO, BINARY BASE64
